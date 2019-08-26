@@ -13,11 +13,11 @@ def home():
     DataToHTML = mongo.db.DataToHTML.find_one()
     return render_template("index.html", DataToHTML = DataToHTML)
 
-# Route that will trigger scrape function
+#  function called scrape that will execute all of your scraping code
 @app.route("/scrape")
 def scrape(): 
 
-    # Run scrapped functions
+    # execution of the entire scraping code
     DataToHTML = mongo.db.DataToHTML
     data = scraper.scrape_last()
     data = scraper.scrape_img()
