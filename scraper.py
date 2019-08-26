@@ -28,7 +28,7 @@ def scrape_img():
     try: 
         browser = init_browser()
         url_main_img = 'https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars'
-        browser.visit(url_main_img)# Visit Mars Space Images through splinter module
+        browser.visit(url_main_img)
         html_main_img = browser.html
         soup = BeautifulSoup(html_main_img, 'html.parser')
         complement_image_url  = soup.find('article')['style'].replace('background-image: url(','').replace(');', '')[1:-1]
