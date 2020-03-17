@@ -16,7 +16,7 @@ Mission to Mars
 
 Build a web application that scrapes various websites for data related to the Mission to Mars and displays the information in a single HTML page. 
 
-Step 1 - Scraping
+## Step 1 - Scraping
 Complete your initial scraping using Jupyter Notebook, BeautifulSoup, Pandas, and Requests/Splinter.
 
 Create a Jupyter Notebook file called mission_to_mars.ipynb and use this to complete all analysis tasks. 
@@ -26,7 +26,7 @@ Create a Jupyter Notebook file called mission_to_mars.ipynb and use this to comp
 Scrape the NASA Mars News Site and collect the latest News Title and Paragraph Text. 
 Assign the text to variables that you can reference later.
 
-# Example:
+### Example:
 news_title = "NASA's Next Mars Mission to Investigate Interior of Red Planet"
 
 news_p = "Preparation of NASA's next spacecraft to Mars, InSight, has ramped up this summer, on course for launch next May from Vandenberg Air Force Base in central California -- the first interplanetary launch in history from America's West Coast."
@@ -36,7 +36,7 @@ Visit the url for JPL Featured Space Image here.
 Use splinter to navigate the site and find the image url for the current Featured Mars Image and assign the url string to a variable called featured_image_url.
 Make sure to find the image url to the full size .jpg image.
 Make sure to save a complete url string for this image.
-# Example:
+### Example:
 featured_image_url = 'https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA16225_hires.jpg'
 
 * Mars Weather
@@ -44,7 +44,7 @@ featured_image_url = 'https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA1
 Visit the Mars Weather twitter account here and scrape the latest Mars weather tweet from the page.
 Save the tweet text for the weather report as a variable called mars_weather.
 
-# Example:
+### Example:
 mars_weather = 'Sol 1801 (Aug 30, 2017), Sunny, high -21C/-5F, low -80C/-112F, pressure at 8.82 hPa, daylight 06:09-17:55'
 Mars Facts
 Visit the Mars Facts webpage here and use Pandas to scrape the table containing facts about the planet including Diameter, Mass, etc.
@@ -60,7 +60,7 @@ Append the dictionary with the image url string and the hemisphere title to a li
 This list will contain one dictionary for each hemisphere.
 
 
-# Example:
+### Example:
 hemisphere_image_urls = [
     {"title": "Valles Marineris Hemisphere", "img_url": "..."},
     {"title": "Cerberus Hemisphere", "img_url": "..."},
